@@ -1,0 +1,26 @@
+.slingshotout {
+	animation: slingshotout 2s linear;
+}
+
+@keyframes slingshotout {
+	0% {
+		transform: translateX(0) rotate(0) scale(1, 1);
+	}
+
+	30% {
+		transform: translateX(-15%) rotate(-20deg) scale(1.4, .6);
+	}
+
+	40% {
+		transform: translateX(-15%) rotate(-20deg) scale(1.4, .6);
+	}
+
+	50% {
+		transform: translate(2000px, -800px) rotate(-20deg) scale(.8, 1.2);
+	}
+
+	100% {
+		transform: translate(2000px, -800px) rotate(-20deg) scale(0);
+	}
+
+}

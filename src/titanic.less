@@ -1,0 +1,45 @@
+.titanic {
+	animation: titanic 6s linear;
+	transform-origin: bottom left;
+	
+	/* Needed so that the origin is in the bottom left of the element, not the container */
+	display: inline-block;
+}
+
+@keyframes titanic {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	20% {
+		transform: rotate(-40deg);
+	}
+
+	40% {
+		transform: rotate(-75deg);
+	}
+
+	50% {
+		transform: rotate(-77deg) translate(-15%, 0) scale(.9);
+	}
+
+	60% {
+		transform: rotate(-75deg) translate(-30%, 0) scale(.7);
+	}
+
+	70% {
+		transform: rotate(-77deg) translate(-45%, 0) scale(.5);
+	}
+
+	80% {
+		transform: rotate(-74deg) translate(-60%, 0) scale(.3);
+	}
+
+	90% {
+		transform: rotate(-75deg) translate(-75%, 0) scale(.01);
+	}
+
+	100% {
+		transform: rotate(-75deg) translate(-75%, 0) scale(0);
+	}
+}

@@ -1,0 +1,25 @@
+
+
+.colorwheel {
+	animation: colorwheel .11s linear;
+	animation-iteration-count: 21;
+}
+
+@steps : 50;
+
+.generate-colorwheel-keyframes(@index; @length) when (@index > 0) {
+	.generate-colorwheel-keyframes((@index - 1); @length); // Decrement
+
+	@percent : percentage(@index/@length);
+	@hue : (@index/@length)*360;
+
+	@{percent} {
+		transform: e(%("rotate(%aturn)", @index/@length));
+		color: hsl(@hue, 100%, 50%);
+	}
+}
+
+
+@keyframes colorwheel {
+	.generate-colorwheel-keyframes(@steps; @steps);
+}

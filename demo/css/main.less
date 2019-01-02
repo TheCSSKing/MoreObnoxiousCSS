@@ -1,0 +1,81 @@
+html {
+	background-color: #fefefe;
+}
+
+.main-container {
+	width: 100%;
+	position: fixed;
+	transform: translateY(-50%);	
+	top: 50%;
+}
+
+#animateTarget {
+	font-size: 4em;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+
+.bottom-container {
+	font-size: 1.15em;
+	margin-bottom: 25px;
+	.subtitle {
+		margin-bottom: 25px;
+		color: #777;
+	}
+}
+
+#animationSelect {
+	width: 200px;
+	margin: 0px auto;	
+	display: inline-block;
+}
+
+.select-group {
+	margin: 0px auto;
+}
+
+a {
+	color: #333;
+
+	&:hover {
+		color: red;
+		display: inline-block;
+		animation: hummingbird .02s linear infinite;
+	}
+
+	&.obn-link:hover {
+		animation: danceparty 2s linear infinite;
+	}
+}
+
+button {
+	&:hover {
+		animation: crazycursor 1s linear infinite;
+	}
+}
+
+@media (max-width: 960px){
+	body {
+		font-size: 13px;
+	}
+}
+
+@media (max-width: 720px){
+	body {
+		font-size: 11px;
+	}
+	.bottom-container, .footer {
+		font-size: 1.5em;
+	}
+}
+
+@media (max-width: 540px){
+	body {
+		font-size: 8px;
+	}
+	.bottom-container, .footer {
+		font-size: 2em;
+	}
+}
+

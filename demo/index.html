@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+		<head>
+			<title>More Obnoxious CSS</title>
+			<link href="../moreobnoxious.css" rel="stylesheet">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+			<link href="./css/main.css" rel="stylesheet">
+		</head>
+
+		<body>
+			<div class="main-container text-center">
+
+				<div class="animate-container">
+					<h1 id="animateTarget" class="zigzagin">More Obnoxious.CSS</h1>
+				</div>
+
+				<div class="bottom-container">
+					<p class="subtitle">More animations for the strong of heart, and weak of mind. <br class="d-none d-sm-block"> Inspired by the original <a class="obn-link" href="http://tholman.com/obnoxious/" target="_blank">Obnoxious.CSS</a> by Tim Holman.</p>
+
+					<div class="select-group">
+						<select class="form-control mr-2" id="animationSelect">
+							<optgroup label="Hover">
+								<option value="colorwheel">Color Wheel</option>
+								<option value="crazycursor">Crazy Cursor (Hover over text)</option>
+								<option value="hummingbird">Hummingbird</option>
+								<option value="wavey">Wavey</option>
+								<option value="heartbeat">Heart Beat</option>
+								<option value="danceparty">Dance Party (WARNING: BRIGHT)</option>
+							</optgroup>
+							<optgroup label="Blink">
+								<option value="blinkstandard">Blink - Standard</option>
+								<option value="blinkuneven">Blink - Uneven</option>
+								<option value="blinkflicker">Blink - Flicker</option>
+							</optgroup>
+							<optgroup label="Exit">
+								<option value="ring">The Ring</option>
+								<option value="slingshotout">Slingshot Out</option>								
+								<option value="titanic">Titanic</option>
+								<option value="blackhole">Black Hole</option>
+								<option value="spinout">Spin Out</option>
+							</optgroup>
+
+							<optgroup label="Entrance">
+								<option value="zigzagin">Zig Zag In</option>
+								<option value="slideupspin">Slide Up Spin</option>
+								<option value="spinin">Spin In</option>
+							</optgroup>	
+						</select>
+
+						<!-- Very weird - need this margin to align with select -->
+						<button class="btn btn-primary mb-2" id="animationStart">Run Animation</button>
+					</div>
+				</div>
+
+				<div class="footer">	
+					<a href="https://github.com/thecssking/MoreObnoxiousCSS/releases/download/v1.0/moreobnoxious.css">Download</a> or <a href="https://github.com/thecssking/MoreObnoxiousCSS">View on Github</a>
+				</div>
+			</div>
+
+			<script src="./js/main.js"></script>
+
+		</body>
+</html>

@@ -1,0 +1,29 @@
+
+
+.blackhole {
+	animation: blackhole 3s linear;
+	/*animation-fill-mode: both;*/
+}
+
+@keyframes blackhole {
+
+	0% {
+		transform: rotate(0turn) scale(1);
+	}
+
+	80% {
+		transform: rotate(20turn) scale(0);
+	}
+
+	80.01% {
+		transform: rotate(0turn) scale(1) skewX(89deg) skewY(1.1deg);
+	}
+
+	83% {
+		transform: rotate(0turn) scale(0);
+	}
+
+	100% {
+		transform: rotate(0turn) scale(0);
+	}
+}

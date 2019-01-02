@@ -1,0 +1,43 @@
+.ring {
+	animation: ring 5s linear;
+}
+
+@text-color: #06285d;
+@base-scale: 6;
+
+@keyframes ring {
+	0% {
+		transform: scale(1) ;
+	}
+
+	49.99% {
+		transform: scale(1) translateX(12px);
+		text-shadow: none;
+	}
+
+	50% {
+		transform: scale(@base-scale);
+		text-shadow: 3px 1px 3px #04214e, -3px -1px 3px #162516, 0px 0px 6px #1b0f71;
+	}
+
+	54% { transform: scale(@base-scale) rotate(1deg);}
+	58% { transform: scale(@base-scale) rotate(-1deg);}
+	62% { transform: scale(@base-scale) rotate(1deg);}
+	66% { transform: scale(@base-scale) rotate(-1deg);}
+	70% { transform: scale(@base-scale) rotate(1deg);}
+	74% { transform: scale(@base-scale) rotate(-1deg);}
+	78% { transform: scale(@base-scale) rotate(1deg);}
+	82% { transform: scale(@base-scale) rotate(-1deg);}
+	86% { transform: scale(@base-scale) rotate(1deg);}
+	90% { transform: scale(@base-scale) rotate(-1deg);}
+	94% { transform: scale(@base-scale) rotate(1deg);}
+	98% { 
+		transform: scale(@base-scale) rotate(-1deg);
+	}
+
+	98.01% {
+		transform: scale(1) rotate(0deg);
+		text-shadow: 3px 1px 3px #04214e, -3px -1px 3px #162516, 0px 0px 6px #1b0f71;
+	}
+
+}

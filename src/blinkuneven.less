@@ -1,0 +1,36 @@
+.blinkuneven {
+	/* Note: Make sure to include the timing function (steps) when using */
+	animation: blinkuneven 3s steps(1);
+	animation-iteration-count: 2;
+}
+
+
+@keyframes blinkuneven {
+	0% {
+		opacity: 1;
+	}
+
+	6% {
+		opacity: 0;
+	}
+
+	16% {
+		opacity: 1;
+	}
+
+	45% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	} 
+
+	64% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}

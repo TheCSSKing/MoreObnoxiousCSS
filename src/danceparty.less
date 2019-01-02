@@ -1,0 +1,25 @@
+
+.danceparty {
+	animation: danceparty 2s linear;
+}
+
+@steps : 50;
+
+.generate-danceparty-keyframes(@index; @length) when (@index > 0) {
+	.generate-danceparty-keyframes((@index - 1); @length); // Decrement
+
+	@percent : percentage(@index/@length);
+	@hue : (@index/@length)*360;
+
+	@{percent} {
+		color: hsl(@hue, 100%, 50%);
+		background-color: hsl(@hue + 180, 100%, 50%)
+	}
+}
+
+
+@keyframes danceparty {
+
+	.generate-danceparty-keyframes(@steps; @steps);
+
+}

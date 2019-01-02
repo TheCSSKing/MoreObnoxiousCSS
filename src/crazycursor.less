@@ -1,0 +1,25 @@
+
+// ALL the cursors.  Who knew?  (https://developer.mozilla.org/en-US/docs/Web/CSS/cursor)
+@cursors: context-menu, help, pointer, progress, wait, cell, crosshair, text, vertical-text, alias, copy, move, no-drop, not-allowed, grab, grabbing, all-scroll, col-resize, n-resize, e-resize, s-resize, w-resize, ne-resize, nw-resize, se-resize, sw-resize, ew-resize, ns-resize, nesw-resize, nwse-resize, zoom-in, zoom-out;
+@length: length(@cursors);
+ 
+
+.crazycursor { 
+	animation: crazycursor 2s linear infinite;
+}
+
+
+.generate-keyframes(@cursors; @index; @length) when (@index > 0) {
+	.generate-keyframes(@cursors; (@index - 1); @length); // Decrement
+
+	@cursor : extract(@cursors, @index);
+	@percent : percentage(@index/@length);
+
+	@{percent} {
+		cursor: @cursor;
+	}
+}
+
+@keyframes crazycursor {
+	.generate-keyframes(@cursors; @length; @length);
+}
