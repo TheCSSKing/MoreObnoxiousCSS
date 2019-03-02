@@ -2,7 +2,7 @@
 
 A "just add water" library of obnoxious CSS animations, based on the original [Obnoxious.CSS](http://tholman.com/obnoxious/) by [Tim Holman](http://tholman.com/), and inspired by the simplicity of [Animate.CSS](https://daneden.github.io/animate.css/).
 
-[View The Demo](https://thecssking.github.io/MoreObnoxiousCSS/demo/) or [Download v1.0](https://github.com/thecssking/MoreObnoxiousCSS/releases/download/v1.0/moreobnoxious.css)
+[View The Demo](https://thecssking.github.io/MoreObnoxiousCSS/) or [Download v1.0](https://github.com/thecssking/MoreObnoxiousCSS/releases/download/v1.0/moreobnoxious.css)
 
 ## About
 
